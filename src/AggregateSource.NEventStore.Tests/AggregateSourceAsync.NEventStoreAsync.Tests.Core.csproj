@@ -31,7 +31,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\dependencies\AggregateSource\src\Core\AggregateSource.Content.ExplicitRouting\AggregateSourceAsync.Content.ExplicitRouting.Core.csproj" />
-    <ProjectReference Include="..\AggregateSourceAsync.NEventStoreAsync\AggregateSourceAsync.NEventStoreAsync.Core.csproj" />
+    <ProjectReference Include="..\AggregateSource.NEventStore\AggregateSourceAsync.NEventStoreAsync.Core.csproj" />
   </ItemGroup>
 
 </Project>
