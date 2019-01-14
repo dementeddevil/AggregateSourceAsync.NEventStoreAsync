@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net46</TargetFrameworks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>AggregateSourceAsync.NEventStoreAsync</AssemblyName>
+    <RootNamespace>AggregateSource.NEventStore</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <DefineConstants Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">TRACE;DEBUG;NETSTANDARD2_0</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net46'">
+    <DefineConstants Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net46'">
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\SharedVersionInfo.cs">
+      <Link>Properties\SharedVersionInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\dependencies\AggregateSource\src\Core\AggregateSource\AggregateSource.Core.csproj" />
+    <ProjectReference Include="..\..\dependencies\NEventStore\src\NEventStore\NEventStore.Core.csproj" />
+  </ItemGroup>
+
+</Project>
