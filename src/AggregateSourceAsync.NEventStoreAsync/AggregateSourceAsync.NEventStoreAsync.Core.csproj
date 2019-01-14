@@ -30,8 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\dependencies\AggregateSource\src\Core\AggregateSource\AggregateSource.Core.csproj" />
-    <ProjectReference Include="..\..\dependencies\NEventStore\src\NEventStore\NEventStore.Core.csproj" />
+    <ProjectReference Include="..\..\dependencies\AggregateSource\src\Core\AggregateSource\AggregateSourceAsync.Core.csproj" />
+    <ProjectReference Include="..\..\dependencies\NEventStore\src\NEventStore\NEventStoreAsync.Core.csproj" />
   </ItemGroup>
 
 </Project>

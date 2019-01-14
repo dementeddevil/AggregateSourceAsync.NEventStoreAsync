@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregateSourceAsync.NEvent
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregateSourceAsync.NEventStoreAsync.Tests.Core", "AggregateSourceAsync.NEventStoreAsync.Tests\AggregateSourceAsync.NEventStoreAsync.Tests.Core.csproj", "{7E6BACB9-7804-429A-A71E-78B12D0AB786}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregateSource.Core", "..\dependencies\AggregateSource\src\Core\AggregateSource\AggregateSource.Core.csproj", "{3FA2D6EC-9FA1-453A-85B3-FE6C3E5B2EB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregateSourceAsync.Core", "..\dependencies\AggregateSource\src\Core\AggregateSource\AggregateSourceAsync.Core.csproj", "{3FA2D6EC-9FA1-453A-85B3-FE6C3E5B2EB8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEventStore.Core", "..\dependencies\NEventStore\src\NEventStore\NEventStore.Core.csproj", "{6B6F6A2C-D466-4394-B953-4B0B8F1928C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NEventStoreAsync.Core", "..\dependencies\NEventStore\src\NEventStore\NEventStoreAsync.Core.csproj", "{6B6F6A2C-D466-4394-B953-4B0B8F1928C9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregateSource.Content.ExplicitRouting.Core", "..\dependencies\AggregateSource\src\Core\AggregateSource.Content.ExplicitRouting\AggregateSource.Content.ExplicitRouting.Core.csproj", "{AF4FD95C-2631-4E17-BDEF-A5B7B2F0E179}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggregateSourceAsync.Content.ExplicitRouting.Core", "..\dependencies\AggregateSource\src\Core\AggregateSource.Content.ExplicitRouting\AggregateSourceAsync.Content.ExplicitRouting.Core.csproj", "{AF4FD95C-2631-4E17-BDEF-A5B7B2F0E179}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
