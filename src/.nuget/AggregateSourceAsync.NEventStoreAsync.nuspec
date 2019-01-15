@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>AggregateSourceAsync.NEventStoreAsync</id>
+    <version>$version$</version>
+    <title>AggregateSourceAsync integration with NEventStoreAsync</title>
+    <authors>AggregateSource Dev Team</authors>
+    <owners>AggregateSource Dev Team</owners>
+    <projectUrl>https://github.com/dementeddevil/AggregateSourceAsync</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Integration to allow the use of NEventStoreAsync with AggregateSourceAsync.</description>
+    <summary>NEventStoreAsync provider for AggregateSourceAsync.</summary>
+    <language>es-US</language>
+    <tags>events, event sourcing, cqrs, storage, neventstore</tags>
+    <!-- 
+    Until this is on develop branch, this version should be the previous version, so it made it compatible
+	with pre-release of the actual version. Ex, if we are on 6.0.0 unstable, dependency from NEventStore should
+	be latest stable version so it can take prerelease of 6.0.0 version.
+	With (5.4 we are telling NuGet that we need a version greater than 5.4 so we are allowing all the prerelease
+	6.x.x versions
+	-->
+    <dependencies>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="AggregateSourceAsync" version="(0.99.99,2.0.0)" exclude="Build,Analyzers"/>
+        <dependency id="NEventStoreAsync" version="(0.99.99,2.0.0)" exclude="Build,Analyzers"/>
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="AggregateSourceAsync" version="(0.99.99,2.0.0)" exclude="Build,Analyzers"/>
+        <dependency id="NEventStoreAsync" version="(0.99.99,2.0.0)" exclude="Build,Analyzers"/>
+        <dependency id="System.Data.SqlClient" version="4.5.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.6" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.6" />
+      <frameworkAssembly assemblyName="System.Transactions" targetFramework=".NETFramework4.6" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.6" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <!--<file src="bin\$configuration$\**" target="lib"/>-->
+    <file src="..\AggregateSource.NEventStore\bin\$configuration$\**\AggregateSourceAsync.NEventStoreAsync.dll" target="lib"/>
+  </files>
+</package>
